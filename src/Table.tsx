@@ -56,8 +56,8 @@ const Table = () => {
             <MuiTable sx={{ minWidth: 650 }} aria-label="simple table">
                 <TableHead>
                     <TableRow>
-                        <TableCell align="right">Name</TableCell>
-                        <TableCell align="right">Rating</TableCell>
+                        <TableCell align="left">Name</TableCell>
+                        <TableCell align="left">Rating</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
