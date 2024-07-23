@@ -1,13 +1,18 @@
-import './App.css'
-import Table from "./Table.tsx";
+import './App.css';
+import Places from './components/Places.tsx';
 import Paper from '@mui/material/Paper';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <Paper>
-      <Table/>
-    </Paper>
-  )
+    <QueryClientProvider client={queryClient}>
+      <Paper>
+        <Places />
+      </Paper>
+    </QueryClientProvider>
+  );
 }
 
-export default App
+export default App;
