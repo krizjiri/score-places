@@ -8,9 +8,13 @@ import Paper from '@mui/material/Paper';
 import {useEffect, useState} from "react";
 import axios from "axios";
 
+type Place = {
+    name: string,
+    rating: number
+}
 
 const Table = () => {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState<Place[]>([]);
 
     useEffect(() => {
         console.log(data)
