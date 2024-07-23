@@ -37,6 +37,7 @@ const Table = () => {
                     }
                 }
             }, {headers: {"X-Goog-Api-Key": KEY, "Content-Type": "application/json", "X-Goog-FieldMask": "*" }})
+            /* eslint:disable-next-line */
             const transformedData = res.data.places.map((item: any) => ({
                 name: item.displayName.text,
                 rating: item.rating
